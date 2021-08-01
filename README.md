@@ -10,7 +10,7 @@ You can use the [release version](https://github.com/SunBK201/OpenWrt-R4S-glibc/
 or compile it yourself: 
 
 ```bash
-bash compile.sh
+wget https://raw.githubusercontent.com/SunBK201/OpenWrt-R4S-glibc/master/compile.sh && bash compile.sh
 ```
 
 In `make menuconfig`, I suggest you check the options below:

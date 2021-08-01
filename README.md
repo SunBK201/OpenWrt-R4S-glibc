@@ -5,7 +5,7 @@ However, the difference is that the standard C library we use is glibc, instead 
 
 # How to use
 
-You can use the release version directly.
+You can use the [release version](https://github.com/SunBK201/OpenWrt-R4S-glibc/releases) directly.
 
 ```bash
 bash compile.sh

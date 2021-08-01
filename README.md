@@ -17,19 +17,19 @@ In `make menuconfig`, I suggest you check the options below:
 
 ```
 Target System
-        --> Rockchip
+	--> Rockchip
 
 Subtarget
-        --> RK33xx boards (64 bit)
+	--> RK33xx boards (64 bit)
 
 Target Profile
-        --> FriendlyARM NanoPi R4S
+	--> FriendlyARM NanoPi R4S
 
 Target Images
-        --> (1008) Root filesystem partition size (in MiB)
+	--> (1008) Root filesystem partition size (in MiB)
 
 Global build settings 
-		--> Compile with full language support
+--> Compile with full language support
 		--> Preferred standard C++ library 
 				--> libstdc++
 

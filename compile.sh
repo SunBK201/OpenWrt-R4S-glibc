@@ -24,22 +24,22 @@ svn checkout https://github.com/immortalwrt/immortalwrt/branches/master/package/
 
 make menuconfig
 
-echo -e "\033[33mPrepare to make download......\033[33m"
+echo -e "\033[33mPrepare to make download......\033[0m"
 sleep 5s
-echo -e "\033[33mBegin to make download\033[33m"
+echo -e "\033[33mBegin to make download\033[0m"
 
 make download -j$(($(nproc) + 1)) V=s
 
-echo -e "\033[33mPrepare to make......\033[33m"
+echo -e "\033[33mPrepare to make......\033[0m"
 sleep 5s
-echo -e "\033[33mBegin to make......\033[33m"
+echo -e "\033[33mBegin to make......\033[0m"
 
 make -j$(($(nproc) + 1)) || make -j1 || make -j1 V=s
 
 if [ "$?" == "0" ]; then
-    echo -e "\033[32mCompile success!\033[32m"
+    echo -e "\033[32mCompile success!\033[0m"
     exit 0
 else
-    echo -e "\033[31mCompile failed!\033[31m"
+    echo -e "\033[31mCompile failed!\033[0m"
     exit 1
 fi
